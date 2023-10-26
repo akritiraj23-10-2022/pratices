@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id recusandae molestiae nihil similique, adipisci commodi officia, neque saepe, dicta eos soluta architecto! Tempora, laborum ex.</p>
+
+    <script src="jquery.js"> </script>
+
+    <script>
+        $(document).ready(function() {
+        $('body').keypress(function(){
+        $('p').css('background-color','orange');
+        });
+        
+
+        $('body').keyup(function(){
+        $('p').css('background-color','green');
+        });
+
+        $('body').keydown(function(){
+        $('p').css('background-color','red');
+        });
+        });
+    </script>
+</body>
+</html>

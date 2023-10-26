@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ullam voluptatum porro temporibus consequatur laboriosam aperiam saepe, corporis molestiae, blanditiis quasi repudiandae magni nobis quas!</p>
+
+    <button id="slideupbtn">Slide Up</button>
+    <button id="slidedownbtn">Slide Down</button>
+    <button id="slideTogglebtn">Slide Toggle </button>
+
+
+    <script src="jquery.js"></script>
+
+    <script>
+       $(document).ready(function(){
+           $('#slideupbtn').click(function(){
+               $('p').slideUp();
+           });
+
+           $('#slidedownbtn').click(function(){
+               $('p').slideDown();
+           });
+
+           $('#slideTogglebtn').click(function(){
+               $('p').slideToggle();
+           });
+       });
+    </script>
+</body>
+</html>

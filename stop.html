@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #abc{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 1px solid black;
+            padding: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+   
+   <div id="abc"> Simran Manish </div> 
+   <br>
+   
+   <button id="animatebtn">Animate </button>
+   <button id="stopbtn"> Stop </button>
+
+
+   <script src="jquery.js"> </script>
+
+   <script>
+       $(document).ready(function(){
+           $('#animatebtn').click(function(){
+               $('#abc').animate({left : '1200px'},10000);
+           });
+
+           $('#stopbtn').click(function(){
+               $('#abc').stop();
+           });
+       });
+   </script>
+
+</body>
+</html>

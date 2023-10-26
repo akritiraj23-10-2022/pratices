@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #box{
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        padding: 10px;
+        position: relative;
+    }
+</style>
+</head>
+
+<body>
+    <div id="box"> </div>
+    <br>
+    <button id="animatebtn">Animate</button>
+
+    <script src="jquery.js">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('animatebtn').click(function(){
+                $('#box').animate({
+                    left : '150px'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

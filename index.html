@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id recusandae molestiae nihil similique, adipisci commodi officia, neque saepe, dicta eos soluta architecto! Tempora, laborum ex.</p>
+
+    <script src="jquery.js"> </script>
+
+    <script>
+        $(document).ready(function (){
+            $('p').click(function(){
+                $('p').css('background-color','pink');
+            });
+
+            $('p').dblclick(function(){
+                $('p').css('background-color','yellow');
+            });
+
+            $('p').contextmenu(function(){
+                $('p').css('background-color','blue');
+            });
+
+
+            $('p').mouseenter(function(){
+                $('p').css('background-color','grey');
+            });
+
+            $('p').mouseleave(function(){
+                $('p').css('background-color','green');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perferendis facere quae quos corrupti, quia pariatur veniam dolorum tempore ipsum accusantium a voluptas. Omnis.</p>
+
+    <br>
+    <button id="hidebtn">Hide </button>
+    <button id="showbtn"> Show</button> 
+
+    <script src="jquery.js"> </script>
+
+    <script>
+        $(document).ready(function(){
+          $('#hidebtn').click(function(){
+              $('p').hide('slow');
+          });
+
+          $('#showbtn').click(function(){
+              $('p').show("slow",function(){
+                  alert("the paragraph is show");
+              });
+          });
+        });
+    </script>
+</body>
+</html>

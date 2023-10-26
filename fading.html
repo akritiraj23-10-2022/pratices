@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga culpa, excepturi, animi ducimus consectetur rem praesentium non fugit fugiat officiis. Veniam, itaque doloribus!</p>
+
+    <button id="fadeoutbtn">fadeOut</button>
+    <button id="fadeinbtn">fadeiIn</button>
+    <button id="fadetogglebtn">fadetoggle</button>
+
+    <script src="jquery.js"> </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#fadeoutbtn').click(function(){
+                $('p').fadeOut("slow",function(){
+                    alert("this is paragraph is fade out");
+                });
+            });
+
+            $('#fadeinbtn').click(function(){
+                $('p').fadeIn();
+            });
+
+            $('#fadetogglebtn').click(function(){
+                $('p').fadeToggle();
+            });
+        });
+    </script>
+
+
+</body>
+</html>
